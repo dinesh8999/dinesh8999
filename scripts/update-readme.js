@@ -14,6 +14,7 @@ async function run() {
   // 3. Calculate total stars
   const stars = repos.reduce(
     (total, repo) => total + repo.stargazers_count,0);
+  
    // 4️. Calculate top languages
   const languageTotals = {};
 
@@ -45,7 +46,8 @@ async function run() {
     .replace("{{REPOS}}", profile.public_repos)
     .replace("{{FOLLOWERS}}", profile.followers)
     .replace("{{STARS}}", stars)
-    .replace("{{UPDATED}}", new Date().toUTCString());
+    .replace("{{UPDATED}}", new Date().toUTCString())
+    .replace("{{TOP_LANGUAGES}}", topLanguages || "No data yet");
 
   // 8. write README back
   fs.writeFileSync("README.md", readme);
