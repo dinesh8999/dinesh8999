@@ -1,4 +1,4 @@
-# 👋 Hi, I'm {{Naveenpanaganti}}
+# 👋 Hi, I'm {{USERNAME}}
 
 - 📦 Public repositories: {{REPOS}}
 - ⭐ Total stars: {{STARS}}
