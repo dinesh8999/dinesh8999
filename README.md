@@ -1,9 +1,9 @@
-# 👋 Hi, I'm {{USERNAME}}
+# 👋 Hi, I'm Naveenpanaganti
 
-- 📦 Public repositories: {{REPOS}}
-- ⭐ Total stars: {{STARS}}
-- 👥 Followers: {{FOLLOWERS}}
-- 🕒 Last updated: {{UPDATED}}
+- 📦 Public repositories: 6
+- ⭐ Total stars: 0
+- 👥 Followers: 0
+- 🕒 Last updated: Mon, 26 Jan 2026 19:07:50 GMT
 
 ---
 _This profile updates automatically using GitHub Actions_
