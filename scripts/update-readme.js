@@ -2,12 +2,28 @@ import fs from "fs";
 
 const USERNAME = "Naveenpanaganti";
 
-const now = new Date().toUTCString();
+async function run() {
+  const profileRes = await fetch(`https://api.github.com/users/${USERNAME}`);
+  const profile = await profileRes.json();
 
-let readme = fs.readFileSync("README.md", "utf8");
+  const reposRes = await fetch(profile.repos_url);
+  const repos = await reposRes.json();
 
-readme = readme
-  .replace("loading...", "Auto update working ✅")
-  .replace("never", now);
+  const stars = repos.reduce(
+    (total, repo) => total + repo.stargazers_count,
+    0
+  );
 
-fs.writeFileSync("README.md", readme);
+  let readme = fs.readFileSync("README.md", "utf8");
+
+  readme = readme
+    .replace("{{USERNAME}}", USERNAME)
+    .replace("{{REPOS}}", profile.public_repos)
+    .replace("{{FOLLOWERS}}", profile.followers)
+    .replace("{{STARS}}", stars)
+    .replace("{{UPDATED}}", new Date().toUTCString());
+
+  fs.writeFileSync("README.md", readme);
+}
+
+run();
