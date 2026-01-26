@@ -9,11 +9,11 @@
 
 ## 📌 Quick Stats
 
-- 👤 **Username:** {{USERNAME}}
-- 📦 **Public Repositories:** {{REPOS}}
-- ⭐ **Total Stars:** {{STARS}}
-- 👥 **Followers:** {{FOLLOWERS}}
-- 🕒 **Last Updated:** {{UPDATED}}
+- 👤 **Username:** Naveenpanaganti
+- 📦 **Public Repositories:** 6
+- ⭐ **Total Stars:** 0
+- 👥 **Followers:** 0
+- 🕒 **Last Updated:** Mon, 26 Jan 2026 19:51:49 GMT
 
 ## 📊 GitHub Overview
 
@@ -27,7 +27,11 @@
 
 ## 🧠 Top Languages (by code)
 
-{{TOP_LANGUAGES}}
+- TypeScript
+- C++
+- CMake
+- Dart
+- JavaScript
 
 
 <hr/>
